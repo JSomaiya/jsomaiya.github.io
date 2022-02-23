@@ -1140,9 +1140,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 
@@ -1655,4 +1658,44 @@ input, select, textarea {
 
 		body.is-preload #footer {
 			opacity: 0;
+		}
+
+		.skillbar {
+			position: relative;
+			display: block;
+			width: 100%;
+			margin-bottom: 30px;
+		}
+		
+		.skillbar-bar:before {
+			background: #323232;
+			content: "";
+			height: 3px;
+			position: absolute;
+			width: 100%;
+			z-index: -1;
+		}
+		
+		.skillbar-bar {
+			height: 3px;
+			width: 0px;
+			background: #fff;
+			transition-property: width, background-color;
+		}
+		
+		.skillbar-title {
+			color: #fff;
+			font-size: 11px;
+			font-weight: 600;
+			text-transform: uppercase;
+			display: inline-block;
+		}
+		
+		.skill-bar-percent {
+			float: right;
+			display: inline-block;
+			color: #fff;
+			font-size: 11px;
+			font-weight: 600;
+			text-transform: uppercase;
 		}
