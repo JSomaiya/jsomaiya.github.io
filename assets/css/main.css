@@ -1668,24 +1668,24 @@ input, select, textarea {
 		}
 		
 		.skillbar-bar:before {
-			background: #323232;
+			background: #db1b1b;
 			content: "";
-			height: 3px;
+			height: 10px;
 			position: absolute;
 			width: 100%;
 			z-index: -1;
 		}
 		
 		.skillbar-bar {
-			height: 3px;
+			height: 10px;
 			width: 0px;
-			background: #fff;
+			background: rgb(78, 236, 30);
 			transition-property: width, background-color;
 		}
 		
 		.skillbar-title {
 			color: #fff;
-			font-size: 11px;
+			font-size: 18px;
 			font-weight: 600;
 			text-transform: uppercase;
 			display: inline-block;
@@ -1695,7 +1695,7 @@ input, select, textarea {
 			float: right;
 			display: inline-block;
 			color: #fff;
-			font-size: 11px;
+			font-size: 18px;
 			font-weight: 600;
 			text-transform: uppercase;
 		}
